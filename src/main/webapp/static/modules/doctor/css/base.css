@@ -1,0 +1,846 @@
+th,
+td {
+  vertical-align: top;
+}
+a {
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+#header {
+  margin: 0;
+  box-shadow: 0 0 6px #333;
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 400;
+  background-color: #009688;
+}
+.layout-left {
+  position: fixed;
+  width: 220px;
+  height: auto;
+  top: 64px;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  background-color: #262b33;
+  box-sizing: border-box;
+  z-index: 200;
+}
+.layout-right {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 64px;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+  box-sizing: border-box;
+  padding: 0 0 0 220px;
+  z-index: 100;
+}
+#footer {
+  border-top: 1px solid #b6c0cd;
+  position: fixed;
+  bottom: 0;
+  line-height: 2;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  z-index: 300;
+}
+body {
+  font-family: "Microsoft YaHei UI", "微软雅黑";
+  min-width: 1360px;
+}
+h5 {
+  font-size: 1.125em;
+  color: #333;
+}
+h6 {
+  font-size: 1em;
+  color: #333;
+}
+hr {
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
+.displayinline {
+  display: inline;
+}
+.hide {
+  display: none !important;
+}
+.boxshadow {
+  box-shadow: 0 0 6px #333;
+}
+.required:after {
+  content: "*";
+  color: red;
+}
+.infobox {
+  border: 1px solid #ddd;
+  background-color: #f2f7f7;
+  margin: 13px 18px;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+}
+.tabtitle {
+  vertical-align: middle;
+}
+.tabtitle > a {
+  float: right;
+  margin-top: 10px;
+  margin-right: 16px;
+}
+.tabtitle > a:first-child {
+  margin-right: 26px;
+}
+.tabtitle h5 {
+  height: 58px;
+  line-height: 58px;
+  padding-left: 20px;
+}
+.tabtitle h5 i {
+  font-size: 1.4em;
+}
+.tabtitle-tools {
+  height: 58px;
+  vertical-align: middle;
+}
+.tabtitle-tools {
+  height: 58px;
+  vertical-align: middle;
+}
+.tabtitle-tools div {
+  margin: 15px 0;
+}
+.tabtitle-tools > *:last-child {
+  padding-right: 20px;
+}
+/*top*/
+.navbar,
+.navbar-inner {
+  background-color: #009688;
+  color: white;
+  height: 64px;
+  line-height: 64px;
+  border-bottom: none;
+  text-shadow: none;
+}
+.brand {
+  width: 220px;
+  height: 64px;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block;
+  background-image: url("../img/aimutulogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navbar-inner > div {
+  float: left;
+}
+.nav-collapse {
+  height: 64px;
+}
+.nav-collapse ul li {
+  height: 64px;
+}
+.nav-collapse ul li a {
+  vertical-align: middle;
+}
+.navbar .nav > li > a {
+  color: white;
+  text-shadow: none;
+  padding: 0 15px;
+  height: 64px;
+  line-height: 64px;
+  border-right: 1px solid rgba(255, 255, 255, 0.0588235);
+}
+.navbar .nav > .active > a {
+  color: white;
+  background-color: rgba(158, 158, 158, 0.2);
+  text-shadow: none;
+}
+.navbar .nav > li > a:hover,
+.navbar .nav > .active > a:hover {
+  background-color: rgba(158, 158, 158, 0.2);
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:visited {
+  color: white;
+  text-shadow: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.0588235);
+}
+.dropdown-menu {
+  text-shadow: none;
+}
+/*新版侧边栏*/
+#left {
+  background-color: #262B33;
+  padding-top: 16px;
+}
+#openClose {
+  border-right: 1px solid #d1d8e1;
+  margin: 0;
+}
+/*leftnav*/
+.leftnav {
+  width: 192px;
+  margin: 0 auto;
+}
+.leftnav .accordion-group {
+  border: none;
+  background-color: #1f242a;
+}
+.leftnav .accordion-heading {
+  background-image: none;
+  background-color: #262B33;
+}
+.leftnav .accordion-toggle {
+  color: rgba(255, 255, 255, 0.5);
+}
+.leftnav .accordion-toggle:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.leftnav .accordion-inner {
+  border: none;
+}
+.leftnav .accordion-inner i {
+  margin-left: 14px;
+}
+.leftnav .accordion-inner .nav a {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #1f242a;
+}
+.leftnav .accordion-inner .nav a:hover {
+  border-radius: 30px;
+  background-color: #1f242a;
+  border: 1px solid #1f242a;
+  color: rgba(255, 255, 255, 0.8);
+}
+.leftnav .accordion-inner .nav .active a {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+  background-color: #1f242a;
+  border: 1px solid #1f242a;
+  border-radius: 30px;
+}
+.leftnav .nav-list > li > a,
+.nav-list .nav-header {
+  text-shadow: none;
+}
+.main {
+  padding: 15px 20px;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.tab-content {
+  background-color: white;
+}
+.nav {
+  margin-bottom: 0;
+}
+.registercard-div {
+  padding: 10px;
+}
+.registercard {
+  width: 336px;
+  width: 321px;
+  height: 170px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  float: left;
+  margin: 10px;
+  color: #808080;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) and (max-width: 1659px) {
+  .registercard {
+    width: 347px;
+  }
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  .registercard {
+    width: 23.73%;
+  }
+}
+.registercard-time {
+  width: 104px;
+  height: 18px;
+  line-height: 18px;
+  color: white;
+  font-size: 10px;
+  background-color: #999;
+  border-radius: 20px;
+  text-align: center;
+  float: right;
+  margin: 8px;
+}
+.registercard-infodiv {
+  box-sizing: border-box;
+  clear: both;
+  padding-left: 34px;
+}
+.registercard-infodiv div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.registercardinfo {
+  padding-left: 22px;
+}
+.registercard-infodiv b,
+.registername {
+  font-size: 14px;
+  color: #111;
+  line-height: 2;
+}
+.registercard-btndiv {
+  font-size: 0;
+  margin-top: 6px;
+}
+.registercard-btndiv *:first-child {
+  border-radius: 0 0 0 6px;
+}
+.registercard-btndiv *:last-child {
+  border-radius: 0 0 6px 0;
+}
+.registercard-btn {
+  width: 50%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  color: #525562;
+  /*  border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;*/
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: #efefef;
+  box-sizing: border-box;
+  text-align: center;
+}
+.registercard-completebtn {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  color: #525562;
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: #efefef;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0 0 6px 6px !important;
+}
+.registercard-pagenum {
+  padding: 10px;
+  color: #333;
+}
+.registercard-pay {
+  width: 86px;
+  height: 86px;
+  display: block;
+  background-image: url("../img/registercardpay.png");
+}
+.registercard-wait {
+  width: 86px;
+  height: 86px;
+  display: block;
+  background-image: url("../img/registercardwait.png");
+}
+.registercard-cure {
+  width: 86px;
+  height: 86px;
+  display: block;
+  background-image: url("../img/registercardcure.png");
+}
+.registercard-complete {
+  width: 86px;
+  height: 86px;
+  display: block;
+  background-image: url("../img/registercardcomplete.png");
+}
+.modalwindows {
+  padding: 0 26px;
+}
+.casehistory .accordion-group {
+  border: none;
+  margin-bottom: 8px;
+}
+.casehistory .accordion-inner {
+  padding: 0 26px;
+}
+.casehistory .accordion {
+  margin-bottom: 8px;
+}
+.casehistory-print {
+  float: right;
+}
+.casehistory .accordion-toggle {
+  border: 1px solid #ddd;
+  background-color: #f2f7f7;
+  padding: 0 26px !important;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1em;
+  color: #333;
+}
+.casehistory .accordion-toggle > span {
+  margin: 0 8px;
+  padding: 5px 10px;
+  height: 26px;
+  font-size: 0.75em;
+  color: white;
+  background-color: #20b6c9;
+  border-radius: 26px;
+}
+.casehistory-print {
+  margin: 5px 26px 0 0;
+  padding: 10px 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  color: #999;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.casehistory h6 {
+  margin: 36px 0 20px 0;
+}
+.basicinfo td {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  color: #666;
+}
+.basicinfo tbody tr:first-child td {
+  border-top: none;
+}
+.basicinfo tbody tr td:first-child {
+  width: 8em;
+}
+.prescriptioninfo {
+  width: 100%;
+}
+.prescriptioninfo td {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  color: #666;
+  font-size: 1em;
+}
+.prescriptioninfo td p {
+  font-size: 0.875em;
+}
+.prescriptioninfo td:first-child {
+  vertical-align: top;
+}
+.accordion-inner {
+  height: 180px;
+  overflow: auto;
+}
+.pagination .pagenum {
+  float: right;
+  margin-top: 13px;
+}
+.btngreen {
+  padding: 8px 14px;
+  color: white;
+  background-color: #009688;
+  font-size: 0.875em;
+  border: 0;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+.btngreen i {
+  color: white;
+}
+.btngray {
+  padding: 8px 14px;
+  color: #999;
+  font-size: 0.75em;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+.displayinline {
+  display: inline;
+}
+.displayblock {
+  width: 100%;
+  display: block;
+}
+.btnbig {
+  padding: 12px 26px;
+}
+.caserreport {
+  background-color: #f5f5f5;
+  font-size: 0.75em;
+  color: #666;
+}
+.caserreport > table {
+  width: 100%;
+}
+.caserreport > table > tbody > tr > td {
+  box-sizing: border-box;
+}
+.caserreport > table > tbody > tr > td:first-child {
+  width: 186px;
+}
+.caserreport > table > tbody > tr > td:nth-child(2) {
+  padding: 18px 0 28px 0;
+}
+.patient {
+  width: 166px;
+  padding: 20px 0 20px 20px;
+}
+.patient > div {
+  margin: 24px 0 18px 0;
+}
+.patient > h6 {
+  font-size: 0.875em;
+}
+.patient > ul > li {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+}
+.tab-content {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+select {
+  height: 36px;
+  margin: 0;
+}
+input[type="text"] {
+  height: 36px;
+  box-sizing: border-box;
+}
+.floaright {
+  float: right;
+}
+.width025 {
+  width: 25%;
+  box-sizing: border-box;
+}
+.width4em {
+  width: 4em;
+}
+.width5em {
+  width: 5em;
+}
+.width6em {
+  width: 6em;
+}
+.width8em {
+  width: 8em;
+}
+.width025 {
+  width: 25%;
+}
+.width030 {
+  width: 30%;
+}
+.width045 {
+  width: 45%;
+}
+.width070 {
+  width: 70%;
+}
+.width080 {
+  width: 80%;
+}
+.width0100 {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.width0100 textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+.recipediv-topinfo {
+  box-sizing: border-box;
+  padding: 26px;
+}
+.recipediv-topinfo > .toolsgroup > a {
+  float: right;
+  margin-right: 16px;
+}
+.recipediv-topinfo > .toolsgroup > a:first-child {
+  margin: 0;
+}
+.casehistory-table {
+  border: 1px solid #CCC;
+  width: 100%;
+}
+.casehistory-table > thead > tr > th {
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  padding: 18px 0;
+}
+.casehistory-table > tbody > tr > td {
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  padding: 18px 7px;
+  box-sizing: border-box;
+}
+.casehistory-tabletdcolor td {
+  background-color: #f2f2f2;
+}
+.casehistory-tablethcolor td {
+  background-color: #f9f9f9;
+}
+.casehistory-table > tfoot > tr > td {
+  padding: 18px 0;
+}
+.casehistory-table > tfoot > tr > td label {
+  display: inline;
+  margin-left: 7px;
+}
+.casehistory-table > tfoot > tr > td span {
+  margin: 7px 14px 0 0;
+}
+.submitgroup {
+  border-top: 1px solid #ddd;
+  height: 76px;
+  vertical-align: middle;
+  padding: 0 26px;
+}
+.submitgroup a {
+  float: right;
+  margin: 20px 16px 0 0;
+}
+.submitgroup a:first-child {
+  margin-right: 0;
+}
+.submitgroup button {
+  margin: 20px 16px 0 0;
+}
+.drugname {
+  width: 100%;
+  border: 1px solid #cccccc;
+  background-color: #eee;
+  border-radius: 6px;
+  vertical-align: -webkit-baseline-middle;
+}
+.drugname td {
+  padding: 6px;
+  vertical-align: middle;
+}
+.drugname td:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.drugname td:last-child {
+  width: 14px;
+  border-radius: 0 6px 6px 0;
+}
+.drugname-i {
+  border-left: 1px solid #cccccc;
+  background-color: #eee;
+  border-radius: 0 6px 6px 0;
+}
+.righttree-td {
+  width: 1px;
+}
+.recipetype {
+  margin: 26px 0 18px 0;
+}
+.patientcard-div {
+  padding: 10px;
+  color: white;
+}
+.patientcard {
+  width: 321px;
+  height: 170px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  float: left;
+  margin: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+@media (min-width: 1440px) and (max-width: 1659px) {
+  .patientcard {
+    width: 347px;
+  }
+}
+@media (min-width: 1660px) and (max-width: 1920px) {
+  .patientcard {
+    width: 23.73%;
+  }
+}
+.patientcard-state {
+  width: 62px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  text-align: center;
+  float: right;
+  margin: 8px;
+}
+.patientcard-infodiv {
+  box-sizing: border-box;
+  clear: both;
+  padding-left: 34px;
+}
+.patientcard-infodiv div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.patientcardinfo {
+  padding-left: 22px;
+}
+.patientcard-infodiv b,
+.registername {
+  font-size: 14px;
+  line-height: 2;
+}
+.patientcard-btndiv {
+  font-size: 0;
+  margin-top: 6px;
+}
+/*.patientcard-btndiv *:first-child {
+  border-radius: 0 0 0 6px;
+}
+
+.patientcard-btndiv *:last-child {
+  border-radius: 0 0 6px 0;
+}*/
+.patientcard-btn {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  color: #525562;
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: #efefef;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+}
+.patientcard-completebtn {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  color: #525562;
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: #efefef;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 0 0 6px 6px !important;
+}
+.patientcard-pagenum {
+  padding: 10px;
+}
+.patientcard-userico {
+  background-image: url("../img/patientcarduseico.png");
+  width: 88px;
+  height: 88px;
+  display: block;
+}
+.patientcard-wait {
+  background-color: #d65a5e;
+}
+.patientcard-cure {
+  background-color: #00988a;
+}
+.patientcard-complete {
+  background-color: #00bdd2;
+}
+.patientcard-wait .patientcard-state {
+  color: #d65a5e;
+}
+.patientcard-cure .patientcard-state {
+  color: #00988a;
+}
+.patientcard-complete .patientcard-state {
+  color: #00bdd2;
+}
+.add-on {
+  padding: 7px 5px !important;
+}
+.radio.inline {
+  padding-top: 0;
+}
+.remark {
+  width: 100%;
+}
+.remark input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.remark td:last-child {
+  width: 160px;
+  text-align: right;
+}
+.remark span {
+  margin-right: 16px;
+}
+.remark a {
+  margin-right: 7px;
+}
+.healthcheck input[type="text"] {
+  width: 155px;
+}
+.healthcheck .control-label {
+  width: 140px;
+  text-align: left;
+}
+.healthcheck .controls {
+  margin-left: 140px;
+}
+.healthcheck .checkbox:first-child {
+  padding-left: 0;
+}
+.echatrs {
+  display: block;
+  width: 100%;
+  height: 538px;
+  height: 260px;
+}
+.register-form {
+  padding: 20px 0;
+}
+.register-form input {
+  margin-bottom: 0;
+}
+.register-form label {
+  padding: 20px 0 8px 0;
+}
+.register-form input[type="text"],
+.register-form select {
+  width: 100%;
+  box-sizing: border-box;
+}
+.register-form input[type="checkbox"] {
+  margin-left: 0;
+}
+.jbox-content {
+  overflow: hidden;
+}
+#casehistorydom {
+  width: 900px;
+}
